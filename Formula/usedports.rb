@@ -7,16 +7,16 @@ class Usedports < Formula
 
   bottle do
     root_url "https://github.com/UsedPorts/UsedPorts/releases/download/v0.1.0"
-    # Built on the lowest supported macOS (Sonoma); Homebrew pours this same
-    # arm64 bottle on newer macOS (Sequoia/Tahoe) too.
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e35d3aec03dc29f9ed5a1cce1c3fd7cdffdedd7a4840911bf9de2f52b25e4be4"
+    # Built on the lowest supported macOS (Sequoia); Homebrew pours this same
+    # arm64 bottle on newer macOS (Tahoe) too.
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e35d3aec03dc29f9ed5a1cce1c3fd7cdffdedd7a4840911bf9de2f52b25e4be4"
   end
 
   depends_on xcode: ["16.0", :build]
 
   depends_on "xcodegen" => :build
   depends_on arch: :arm64
-  depends_on macos: :sonoma
+  depends_on macos: :sequoia
 
   def install
     system "xcodegen", "generate"
