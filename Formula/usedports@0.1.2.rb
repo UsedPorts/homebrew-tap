@@ -1,4 +1,4 @@
-class Usedports < Formula
+class UsedportsAT012 < Formula
   desc "View and manage active TCP/UDP ports on macOS"
   homepage "https://github.com/UsedPorts/UsedPorts"
   url "https://github.com/UsedPorts/UsedPorts/archive/refs/tags/v0.1.2.tar.gz"
