@@ -1,15 +1,15 @@
 class Usedports < Formula
   desc "View and manage active TCP/UDP ports on macOS"
   homepage "https://github.com/UsedPorts/UsedPorts"
-  url "https://github.com/UsedPorts/UsedPorts/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "5c3ef776a065da33877a74ecdf98cfd3d0336d37df3df30d6e1da2d3a884019f"
+  url "https://github.com/UsedPorts/UsedPorts/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "9ebb446d443afcf4d81adb130bc364ae89b03f50edce94a91eada6b3cd28f64d"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/UsedPorts/UsedPorts/releases/download/v0.1.3"
+    root_url "https://github.com/UsedPorts/UsedPorts/releases/download/v0.1.4"
     # Built on the lowest supported macOS (Sequoia); Homebrew pours this same
     # arm64 bottle on newer macOS (Tahoe) too.
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7dde786f67498f6db2e343cf4b8188f458c3ed8584d3ed622488581ac67313cb"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a6bdac2d3939496d0ee754b277d51020610c07a931eb2da4a0529aa1882b052e"
   end
 
   depends_on xcode: ["16.0", :build]
